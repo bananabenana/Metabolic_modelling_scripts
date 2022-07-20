@@ -1,4 +1,4 @@
-##### ID mapping script for COBRA models
+##### Adding additional annotation data to COBRA metabolic models models
 
 """
 This script improves metabolic models by adding additional annotations for model metabolites and reactions by using a reference model (universal model from BiGG - https://zenodo.org/record/6713279 or a user-input model included).
