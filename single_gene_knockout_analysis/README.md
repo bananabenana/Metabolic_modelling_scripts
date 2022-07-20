@@ -5,7 +5,7 @@ This script runs a user-friendly version of single_gene_deletion() function from
 ## Overview and process
 1. The script takes input directory contaning metabolic model file/s and reference model file (model file formats: `.xml`, `.json`, `.sbml`) 
 2. Initialises model on growth media of user choice accessed from the `growth_mediums_dict.py` file.
-3. Uses the single_gene_deletion() function from COBRApy to knockdown each gene one at a time
+3. Uses the `single_gene_deletion()` function from COBRApy to knockdown each gene one at a time
 4. Produces a report 
 
 
