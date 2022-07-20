@@ -35,7 +35,7 @@ parser = argparse.ArgumentParser(description = 'Help for improve_model_annotatio
 parser._action_groups.pop()
 required = parser.add_argument_group('required arguments')
 optional = parser.add_argument_group('optional arguments')
-required.add_argument('-m', '--models', help = 'Directory of model files to be annotated', required = True) # args.models
+required.add_argument('-m', '--models', help = 'Directory of model files to be annotated. Models can be in .xml, .json or .sbml formats', required = True) # args.models
 required.add_argument('-r', '--reference', help = 'Reference model file annotations will be copied from. Reference model provided (iWFL1372_iML1515_iYS1720.json). Can also use BiGG Universal model found here: https://zenodo.org/record/6713279', required = True) # args.reference
 optional.add_argument('-y', '--ya_name', help = 'What is ya name?') # args.ya_name
 args = parser.parse_args()
