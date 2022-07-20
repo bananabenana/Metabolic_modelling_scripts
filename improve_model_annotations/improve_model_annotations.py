@@ -5,6 +5,12 @@ This script improves metabolic models by adding additional annotations for model
 User can provide reference and input model files in any format (.xml, .json or .sbml).
 """
 
+### Authors
+"""
+Jon M Monk (https://scholar.google.com/citations?user=wJ4CAlwAAAAJ&hl=en)
+Ben Vezina (https://scholar.google.com/citations?user=Rf9oh94AAAAJ&hl=en)
+"""
+
 ### Dependancies
 """
 cobra=0.20.0
