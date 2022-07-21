@@ -45,8 +45,7 @@ required arguments:
   -m MODELS, --models MODELS
                         Directory of model files to be annotated. Can be in .xml, .json or .sbml formats
   -g GROWTH_MEDIA, --growth_media GROWTH_MEDIA
-                        Growth media in which models will be grown to test gene essentiality. Provided medias include: LB, M9, BG11, LB_CarveMe, nutrient_media, TSA, TSA_sheep_blood, PMM5_Mendoza,
-                        PMM7_Mendoza, CDM_Mendoza
+                        Growth media in which models will be grown to test gene essentiality. Provided medias include: LB, M9, BG11, LB_CarveMe, nutrient_media, TSA, TSA_sheep_blood, PMM5_Mendoza, PMM7_Mendoza, CDM_Mendoza. Media with SEED IDs are also available by adding _SEED to the media name. Example: M9_SEED, LB_SEED, etc.
 
 optional arguments:
   -y YA_NAME, --ya_name YA_NAME
@@ -55,18 +54,18 @@ optional arguments:
 
 ## Media options
 Provided medias include:
-- `LB`
-- `M9`
-- `BG11`
-- `LB_CarveMe`
-- `nutrient_media`
-- `TSA`
-- `TSA_sheep_blood`
-- `PMM5_Mendoza`
-- `PMM7_Mendoza`
-- `CDM_Mendoza`
+- `LB` or `LB_SEED`
+- `BG11` or `BG11_SEED`
+- `LB_CarveMe` or `LB_CarveMe_SEED`
+- `nutrient_media` or `nutrient_media_SEED`
+- `TSA` or `TSA_SEED`
+- `TSA_sheep_blood` or `TSA_sheep_blood_SEED`
+- `PMM5_Mendoza` or `PMM5_Mendoza_SEED`
+- `PMM7_Mendoza` or `PMM7_Mendoza_SEED`
+- `CDM_Mendoza` or `CDM_Mendoza_SEED`
 
-These are all using BiGG IDs. SEED IDs are on the way.
+
+These medias are using BiGG IDs. To obtain a media using SEED IDs (if you built a model using KBase or ModelSEED, add _SEED to the media name.
 Look at the file format if you wish to create your own medias! Pretty easy to do!
 
 ## Authors
