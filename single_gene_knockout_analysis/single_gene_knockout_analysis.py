@@ -35,7 +35,7 @@ parser._action_groups.pop()
 required = parser.add_argument_group('required arguments')
 optional = parser.add_argument_group('optional arguments')
 required.add_argument('-m', '--models', help = 'Directory of model files to be annotated. Can be in .xml, .json or .sbml formats', required = True) # args.models
-required.add_argument('-g', '--growth_media', help = 'Growth media in which models will be grown to test gene essentiality. Provided medias include: LB, M9, BG11, LB_CarveMe, nutrient_media, TSA, TSA_sheep_blood, PMM5_Mendoza, PMM7_Mendoza, CDM_Mendoza', required = True) # args.growth_media
+required.add_argument('-g', '--growth_media', help = 'Growth media in which models will be grown to test gene essentiality. Provided medias include: LB, M9, BG11, LB_CarveMe, nutrient_media, TSA, TSA_sheep_blood, PMM5_Mendoza, PMM7_Mendoza, CDM_Mendoza. Media with SEED IDs are also available by adding _SEED to the media name. Example: M9_SEED, LB_SEED, etc.', required = True) # args.growth_media
 optional.add_argument('-y', '--ya_name', help = 'What is ya name?') # args.ya_name
 args = parser.parse_args()
 # args = parser.parse_args('-m models -g LB_CarveMe'.split())
