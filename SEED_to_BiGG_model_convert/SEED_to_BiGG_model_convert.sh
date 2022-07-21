@@ -81,7 +81,7 @@ elif [[ $ext == json ]]; then
 	echo "..."
 	sed -i 's/cpd00007_e0/o2_e/g' "$dir"/"$tag"_o2_fix.json
 	echo "..."
-	sed -i 's/cpd00007_p0/o2_p/g' "$dir"/"$tag"_o2_fix.xml
+	sed -i 's/cpd00007_p0/o2_p/g' "$dir"/"$tag"_o2_fix.json
 	echo "Done!"
 
 else
