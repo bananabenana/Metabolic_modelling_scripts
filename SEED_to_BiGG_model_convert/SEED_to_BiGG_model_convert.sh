@@ -19,16 +19,18 @@
 COMMAND_LINE_OPTIONS_HELP='
 This script will do a string replace from "cpd00007" (SEED ID) to "o2" (BiGG ID) for oxygen so models can be initialised and FBA, single gene knockout analysis etc performed.
 
+Usage: bash SEED_to_BiGG_model_convert.sh [-h] -m model.xml
+
 Command line options:
     Required:
-        -m          Model file to be converted.
+        -m          Model file to be converted. Takes .xml or .json
 		
     Optional:
         -h          Print this help menu
 
 Example:
-    Convert model iKp1289
-		bash SEED_to_BiGG_model_convert.sh -m input.xml
+	bash SEED_to_BiGG_model_convert.sh -m model.xml
+	bash SEED_to_BiGG_model_convert.sh -m model.json
 '
 
 # Define options
