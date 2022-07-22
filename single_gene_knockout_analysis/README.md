@@ -11,7 +11,7 @@ This script runs a user-friendly version of single_gene_deletion() function from
 
 ## Quick start
 ```
-python single_gene_knockout_analysis.py --models --growth_media LB --atmosphere aerobic
+python single_gene_knockout_analysis.py --models input_directory --growth_media LB --atmosphere aerobic
 ```
 
 ## Dependancies
