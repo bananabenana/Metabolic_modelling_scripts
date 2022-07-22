@@ -11,7 +11,7 @@ This script runs a user-friendly version of single_gene_deletion() function from
 
 ## Quick start
 ```
-python single_gene_knockout_analysis.py --models -growth_media LB
+python single_gene_knockout_analysis.py --models --growth_media LB --atmosphere aerobic
 ```
 
 ## Dependancies
@@ -46,6 +46,8 @@ required arguments:
                         Directory of model files to be annotated. Can be in .xml, .json or .sbml formats
   -g GROWTH_MEDIA, --growth_media GROWTH_MEDIA
                         Growth media in which models will be grown to test gene essentiality. Provided medias include: LB, M9, BG11, LB_CarveMe, nutrient_media, TSA, TSA_sheep_blood, PMM5_Mendoza, PMM7_Mendoza, CDM_Mendoza. Media with SEED IDs are also available by adding _SEED to the media name. Example: M9_SEED, LB_SEED, etc.
+  -a ATMOSPHERE, --atmosphere ATMOSPHERE
+                        Growth in aerobic (O2) or anerobic atmosphere (absense of O2). Options: [aerobic, anaerobic]
 
 optional arguments:
   -y YA_NAME, --ya_name YA_NAME
@@ -64,9 +66,13 @@ Provided medias include:
 - `PMM7_Mendoza` or `PMM7_Mendoza_SEED`
 - `CDM_Mendoza` or `CDM_Mendoza_SEED`
 
-
 These medias are using BiGG IDs. To obtain a media using SEED IDs (if you built a model using KBase or ModelSEED, add _SEED to the media name.
 Look at the file format if you wish to create your own medias! Pretty easy to do!
+
+## Atmosphere
+Independent of media type is aerobic vs anerobic growth. One must be selected for the script to run. Options:
+- `aerobic`
+- `anerobic`
 
 ## Authors
 
