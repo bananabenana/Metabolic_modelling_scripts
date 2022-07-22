@@ -66,8 +66,14 @@ Provided medias include:
 - `PMM7_Mendoza` or `PMM7_Mendoza_SEED`
 - `CDM_Mendoza` or `CDM_Mendoza_SEED`
 
-These medias are using BiGG IDs. To obtain a media using SEED IDs (if you built a model using KBase or ModelSEED, add _SEED to the media name.
-Look at the file format if you wish to create your own medias! Pretty easy to do!
+These medias are using BiGG IDs. To obtain a media using SEED IDs (if you built a model using KBase or ModelSEED), add _SEED to the media name.
+
+Look at the file format if you wish to create your own medias! To assist, included is a `complex_ingredients` directory which has the components of various 'undefined' medias for microbial growth including:
+- `yeast extract`
+- `beef extract`
+- `peptone`
+- `soy peptone`
+- `tryptone` 
 
 ## Atmosphere
 Independent of media type is aerobic vs anerobic growth. One must be selected for the script to run. Options:
