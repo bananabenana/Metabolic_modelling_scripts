@@ -1,4 +1,4 @@
-# Collate and merge all FBA profiles from Bactabolize into logntable format for downstream analysis
+# Merge multiple FBA profiles into longtable format
 
 This script takes a directory containing  .tsv files from the [Bactabolize](https://github.com/kelwyres/Bactabolize) [fba](https://github.com/kelwyres/Bactabolize/wiki/4.-Predict-growth-profiles) command and merges them together into a longtable format for analysis in a program like R. 
 
