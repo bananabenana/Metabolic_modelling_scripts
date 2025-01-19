@@ -4,17 +4,24 @@ This multi-threaded script generates a reaction presence/absense table for a dir
 
 ## Quick usage
 ```bash
-# Run on directory of metabolic models using 16 threads
+# Run on directory of metabolic models using 16 threads when a reference model was used to construct child models (AKA Bactabolize)
 python reaction_presence_absense_generate.py \
   -m ref_model/iML1515.json \
   -d bactabolize_models \
   -o bactabolize_models_rxn \
   -t 16
+
+# Run on directory of metabolic models using 16 threads when no specific reference model was used (AKA CarveMe)
+python reaction_presence_absense_generate.py \
+  -d carveme_models \
+  -o carveme_models_rxn \
+  -t 16
+
 ```
 
 ## Options
 
-`--master_model`/`-m`: Input master model file which should contain all possible reactions. Can be either a pan model or universal model
+`--master_model`/`-m`: Input master model file which should contain all possible reactions. Can be either a pan model or universal model. NOT required.
 
 `--directory`/`-d`: Input directory containing metabolic models
 
